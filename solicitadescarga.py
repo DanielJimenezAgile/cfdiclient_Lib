@@ -33,9 +33,9 @@ class SolicitaDescarga():
         solicitud.set('FechaInicial', fecha_inicial.strftime('%Y-%m-%dT%H:%M:%S'))
        # solicitud.set('TipoSolicitud', tipo_solicitud)
         if tipo_solicitud is not None:
-	    solicitud.set('TipoSolicitud', tipo_solicitud)
-
-	if rfc_emisor is not None:
+	        solicitud.set('TipoSolicitud', tipo_solicitud)
+        
+        if rfc_emisor is not None:
             solicitud.set('RfcEmisor', rfc_emisor)
         
         if rfc_receptor is not None:
